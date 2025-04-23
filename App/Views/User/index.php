@@ -1,2 +1,2 @@
 <?php
-echo "This is index view for user";
+echo  "This is index view for user";

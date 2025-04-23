@@ -3,7 +3,7 @@
 <div class="panel panel-default">
     <div class="panel-heading">Thêm sản phẩm mới</div>
     <div class="panel-body">
-        <form action="product/store" method="POST" enctype="multipart/form-data">
+        <form action="store" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label>Tên sản phẩm</label>
                 <input type="text" name="name" class="form-control" required>

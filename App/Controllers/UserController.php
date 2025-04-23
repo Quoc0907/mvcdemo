@@ -7,6 +7,6 @@ class UserController
     }
     public function create()
     {
-        echo "U in method Create of UserController Controler";
+        echo "U in method Create of UserController Controoler";
     }
 }
