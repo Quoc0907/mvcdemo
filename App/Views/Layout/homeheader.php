@@ -1,6 +1,9 @@
 <?php
 $config = require "config.php";   // Tải mảng cấu hình từ file config.php
 $baseURL = $config['baseURL'];    // Lấy giá trị 'baseURL' từ mảng cấu hình
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +45,9 @@ $baseURL = $config['baseURL'];    // Lấy giá trị 'baseURL' từ mảng cấ
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">
+                            <?= array_sum(array_column($_SESSION['cart'] ?? [], 'quantity')) ?>
+                        </span>
                         </button>
                     </form>
                 </div>

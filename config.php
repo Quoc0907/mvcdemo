@@ -5,7 +5,7 @@ return array(
     'assets' => '//PTITCNTT2402/mvcdemo/assets',
     'db' => array(
         'host'     => 'localhost',
-        'name'     => 'ProductDB',
+        'name'     => 'csdl',
         'username' => 'root',
         'password' => ''
     )
