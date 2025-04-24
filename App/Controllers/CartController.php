@@ -33,4 +33,8 @@ class CartController
         }
     }
     
+    public function index()
+    {
+        include './App/Views/Cart/index.php';
+    }
 }
