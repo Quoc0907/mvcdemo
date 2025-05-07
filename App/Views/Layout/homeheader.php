@@ -54,7 +54,7 @@ if (session_status() === PHP_SESSION_NONE) {
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownProfile">
                                     <li><a class="dropdown-item" href="#!"><?= $_SESSION['username'] ?></a></li>
-                                    <li><a class="dropdown-item" href="#!">Lịch sử đơn hàng</a></li>
+                                    <li><a class="dropdown-item" href="<?=$baseURL?>Order/history">Lịch sử đơn hàng</a></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="<?=$baseURL?>user/logout">Logout</a></li>
                                 </ul>
